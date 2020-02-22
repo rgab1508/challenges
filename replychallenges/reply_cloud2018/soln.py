@@ -6,10 +6,10 @@
     rv -> no of regions
 """
 
-from base import Project, Provider, Region
+from base.base import Project, Provider, Region
 
 files = ["first_adventure.in", "second_adventure.in", "third_adventure.in", "fourth_adventure.in"]
-f = open(files[0])
+f = open(f"inputs/{files[0]}")
 V, S, C, P = map(int, f.readline().split())
 PROVIDERS = []
 PROJECTS = []

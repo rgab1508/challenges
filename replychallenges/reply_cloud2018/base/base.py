@@ -17,3 +17,5 @@ class Project():
         self.penalty = penalty
         self.country = country
         self.amount_of_service_needed_for_each_serv_pack = amount_of_service_needed_for_each_serv_pack
+
+
