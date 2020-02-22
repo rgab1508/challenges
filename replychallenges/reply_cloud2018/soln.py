@@ -8,6 +8,7 @@
 
 from base.base import Project, Provider, Region
 
+# parsing input file
 files = ["first_adventure.in", "second_adventure.in", "third_adventure.in", "fourth_adventure.in"]
 f = open(f"inputs/{files[0]}")
 V, S, C, P = map(int, f.readline().split())
@@ -42,3 +43,5 @@ for k in range(P):
     p = Project(base_penalty, target_country, amount_of_service)
     PROJECTS.append(p)
 
+
+f.close()
