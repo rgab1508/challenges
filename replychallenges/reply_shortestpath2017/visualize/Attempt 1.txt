@@ -1,0 +1,25 @@
+import random
+
+
+def pickNum(_min, _max, ex_num):
+    a = random.randint(_min, _max)
+
+    if(str(a).find(str(ex_num)) != -1):
+        return pickNum(_min, _max, ex_num)
+    
+    return a
+
+
+T = int(input())
+
+for i in range(T):
+    n = int(input())
+    
+    a = pickNum(0, n-1, 4)
+    b = pickNum(0, n-1, 4)
+    while(a + b != n):
+        a = pickNum(0, n-1, 4)
+        b = pickNum(0, n-1, 4)
+        
+    print(a, b)
+    
