@@ -86,7 +86,7 @@ for i in range(H):
 def find_and_place_man(desk):
     pm = pro_managers[0]
     pm.placed = True
-    pm.desk = desk
+    pm.desk = reversed(desk)
     man_desks_conf.append(pm)
     pro_managers.pop(0)
     return pm
@@ -94,7 +94,7 @@ def find_and_place_man(desk):
 def find_and_place_dev(desk):
     d = developers[0]
     d.placed = True
-    d.desk = desk
+    d.desk = reversed(desk)
     dev_desks_conf.append(d)
     developers.pop(0)
     return d

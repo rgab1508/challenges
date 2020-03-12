@@ -18,11 +18,12 @@ def pick_rand_arr(n, m, _avg):
 for it in range(t):
     n, m = map(int, input().split(" "))
 
-    if n == 1:
-        print(m)
-        break
 
     a = list(map(int, input().split(" ")))
+
+    if n == 1:
+        print(int(avg(a, n)))
+        break
 
     _avg = avg(a, n)
 
